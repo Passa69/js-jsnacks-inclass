@@ -150,10 +150,27 @@ const people = [
     }
 ]
 
-const patente = people.filter((person) => {
+// const patente = people.filter((person) => {
+//     if (person.age >= 18) {
+//         return true;
+//     } 
+//     return false;
+// });
+// console.log("possono guidare:", patente);
+
+// const patenteNope = people.filter((person) => {
+//     if (person.age < 18) {
+//         return true;
+//     } 
+//     return false;
+// });
+// console.log("non possono guidare:", patenteNope);
+
+
+const patente = people.map((person) => {
     if (person.age >= 18) {
-        return true;
-    } 
-    return false;
+        return console.log(`possono guidare: ${person.name}, ${person.surname} `);
+    } else {
+        return console.log(`non possono guidare: ${person.name}, ${person.surname} `);
+    }
 });
-console.log(patente);
