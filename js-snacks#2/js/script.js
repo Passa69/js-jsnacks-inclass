@@ -67,17 +67,25 @@ const auto = [
 ]
 
 const benzina = auto.filter((automobili) => {
-    return automobili.alimentazione == "benzina";
-
+    if (automobili.alimentazione == "benzina") {
+        return true;
+    }
+    return false;
 });
 console.log(benzina);
 
 const diesel = auto.filter((automobili) => {
-    return automobili.alimentazione == "diesel";
+    if (automobili.alimentazione == "diesel") {
+        return true;
+    }
+    return false;
 });
 console.log(diesel);
 
 const altro = auto.filter((automobili) => {
-    return automobili.alimentazione !== "benzina" && automobili.alimentazione !== "diesel";
+    if (automobili.alimentazione !== "benzina" && automobili.alimentazione !== "diesel") {
+        return true;
+    }
+    return false;
 });
 console.log(altro);
