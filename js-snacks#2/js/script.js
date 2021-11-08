@@ -66,6 +66,22 @@ const auto = [
     }
 ]
 
+// const benzina = auto.filter((automobili) => {
+//     return automobili.alimentazione == "benzina";
+
+// });
+// console.log(benzina);
+
+// const diesel = auto.filter((automobili) => {
+//     return automobili.alimentazione == "diesel";
+// });
+// console.log(diesel);
+
+// const altro = auto.filter((automobili) => {
+//     return automobili.alimentazione !== "benzina" && automobili.alimentazione !== "diesel";
+// });
+// console.log(altro);
+
 const benzina = auto.filter((automobili) => {
     if (automobili.alimentazione == "benzina") {
         return true;
